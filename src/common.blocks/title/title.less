@@ -1,0 +1,41 @@
+@import (reference) '../../less/variables.less';
+
+.title {
+
+    &_size_m {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        @media(min-width: @tablet-landscape) {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        @media(min-width: @desktop-medium) {
+            font-size: 44px;
+        }
+    }
+
+    &_size_l {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.2;
+
+        @media(min-width: @desktop-medium) {
+            font-size: 35px;
+        }
+    }
+
+    &_color {
+
+        &_white {
+            color: @color-white;
+        }
+    }
+
+    &_align_center {
+        text-align: center;
+    }
+}

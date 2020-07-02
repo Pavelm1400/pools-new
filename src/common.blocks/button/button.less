@@ -1,0 +1,35 @@
+@import (reference) '../../less/variables.less';
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &_size_m {
+        min-height: 40px;
+        padding: 12px 8px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+
+        .button__caption {
+            margin-left: 4px;
+        }
+
+        .button__icon {
+            width: 16px;
+            height: 16px;
+            flex: 0 0 16px;
+        }
+    }
+
+    &_color_white {
+        color: @color-blue;
+        border: 1px solid @color-blue;
+        fill: @color-blue;
+    }
+
+}

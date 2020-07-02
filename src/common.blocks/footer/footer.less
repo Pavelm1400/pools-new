@@ -1,0 +1,140 @@
+@import (reference) '../../less/variables.less';
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.footer__top {
+    background-color: #0d79bf;
+}
+
+.footer__container {
+    padding: 16px 0 24px;
+
+    @media(min-width: @tablet-landscape) {
+        display: flex;
+        padding: 24px 0 26px;
+    }
+}
+
+.footer__left-side {
+    @media(min-width: @tablet-landscape) {
+        flex-basis: calc(100% / 12 * 4);
+    }
+
+    @media(min-width: @desktop-small) {
+        flex-basis: calc(100% / 12 * 3);
+    }
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @media(min-width: @tablet-landscape) {
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+}
+
+.footer__link {
+    height: 33px;
+
+    @media(min-width: @tablet-landscape) {
+        height: 46px;
+    }
+}
+
+.footer__image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.footer__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(min-width: @tablet-landscape) {
+        justify-content: flex-start;
+    }
+}
+
+.footer__icon {
+    fill: @color-white;
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+}
+
+.footer__number {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.44;
+    color: @color-white;
+    margin-left: 2px;
+}
+
+.footer__right-side {
+    display: none;
+
+    @media(min-width: @tablet-landscape) {
+        display: block;
+        flex-basis: calc(100% / 12 * 8);
+    }
+
+    @media(min-width: @desktop-small) {
+        flex-basis: calc(100% / 12 * 9);
+    }
+}
+
+.footer__description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: @color-white;
+}
+
+.footer__bottom {
+    background-color: @color-main;
+}
+
+.footer__wrapper {
+    padding: 16px 0 20px;
+
+    @media(min-width: @tablet-landscape) {
+        padding: 18px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer__caption {
+    color: @color-white;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+
+    @media(min-width: @tablet-landscape) {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+}
+
+.footer__prod {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__bees {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: @color-white;
+}
